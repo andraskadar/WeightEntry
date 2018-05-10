@@ -1,0 +1,757 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 50;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		BD2CF27F6D16E443F19F28D4 /* Pods_WeightEntryTargets_WeightEntry.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 4961D8032ABF7975D09D689B /* Pods_WeightEntryTargets_WeightEntry.framework */; };
+		C414462D20A47A64008D1678 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = C414462C20A47A64008D1678 /* AppDelegate.swift */; };
+		C414462F20A47A64008D1678 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C414462E20A47A64008D1678 /* ViewController.swift */; };
+		C414463220A47A64008D1678 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = C414463020A47A64008D1678 /* Main.storyboard */; };
+		C414463420A47A65008D1678 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = C414463320A47A65008D1678 /* Assets.xcassets */; };
+		C414463720A47A65008D1678 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = C414463520A47A65008D1678 /* LaunchScreen.storyboard */; };
+		C414464420A47B0E008D1678 /* Interface.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = C414464220A47B0E008D1678 /* Interface.storyboard */; };
+		C414464620A47B0F008D1678 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = C414464520A47B0F008D1678 /* Assets.xcassets */; };
+		C414464D20A47B0F008D1678 /* WeightEntryWatch Extension.appex in Embed App Extensions */ = {isa = PBXBuildFile; fileRef = C414464C20A47B0F008D1678 /* WeightEntryWatch Extension.appex */; settings = {ATTRIBUTES = (RemoveHeadersOnCopy, ); }; };
+		C414465420A47B0F008D1678 /* ExtensionDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = C414465320A47B0F008D1678 /* ExtensionDelegate.swift */; };
+		C414465620A47B0F008D1678 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = C414465520A47B0F008D1678 /* Assets.xcassets */; };
+		C414465A20A47B0F008D1678 /* WeightEntryWatch.app in Embed Watch Content */ = {isa = PBXBuildFile; fileRef = C414464020A47B0E008D1678 /* WeightEntryWatch.app */; };
+		C414466420A48045008D1678 /* WeightEntryInterfaceController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C414466320A48045008D1678 /* WeightEntryInterfaceController.swift */; };
+		C414466620A48097008D1678 /* WeightModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = C414466520A48097008D1678 /* WeightModel.swift */; };
+		C414466720A48097008D1678 /* WeightModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = C414466520A48097008D1678 /* WeightModel.swift */; };
+		C414466920A48320008D1678 /* DataStorage.swift in Sources */ = {isa = PBXBuildFile; fileRef = C414466820A48320008D1678 /* DataStorage.swift */; };
+		C414466A20A48320008D1678 /* DataStorage.swift in Sources */ = {isa = PBXBuildFile; fileRef = C414466820A48320008D1678 /* DataStorage.swift */; };
+		E59C8A1155ABB74D77660AD0 /* Pods_WeightEntryTargets_WeightEntryWatch_Extension.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 8ECB60C06B60D8DEB6E31F32 /* Pods_WeightEntryTargets_WeightEntryWatch_Extension.framework */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		C414464E20A47B0F008D1678 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = C414462120A47A64008D1678 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = C414464B20A47B0F008D1678;
+			remoteInfo = "WeightEntryWatch Extension";
+		};
+		C414465820A47B0F008D1678 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = C414462120A47A64008D1678 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = C414463F20A47B0E008D1678;
+			remoteInfo = WeightEntryWatch;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXCopyFilesBuildPhase section */
+		C414465E20A47B0F008D1678 /* Embed App Extensions */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "";
+			dstSubfolderSpec = 13;
+			files = (
+				C414464D20A47B0F008D1678 /* WeightEntryWatch Extension.appex in Embed App Extensions */,
+			);
+			name = "Embed App Extensions";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		C414466220A47B0F008D1678 /* Embed Watch Content */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "$(CONTENTS_FOLDER_PATH)/Watch";
+			dstSubfolderSpec = 16;
+			files = (
+				C414465A20A47B0F008D1678 /* WeightEntryWatch.app in Embed Watch Content */,
+			);
+			name = "Embed Watch Content";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXCopyFilesBuildPhase section */
+
+/* Begin PBXFileReference section */
+		37A459F6C036A3A2E31B8F5F /* Pods-WeightEntryTargets-WeightEntry.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-WeightEntryTargets-WeightEntry.release.xcconfig"; path = "Pods/Target Support Files/Pods-WeightEntryTargets-WeightEntry/Pods-WeightEntryTargets-WeightEntry.release.xcconfig"; sourceTree = "<group>"; };
+		4961D8032ABF7975D09D689B /* Pods_WeightEntryTargets_WeightEntry.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_WeightEntryTargets_WeightEntry.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		51BB81EC1C96D2E44BA6C47F /* Pods-WeightEntryTargets-WeightEntry.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-WeightEntryTargets-WeightEntry.debug.xcconfig"; path = "Pods/Target Support Files/Pods-WeightEntryTargets-WeightEntry/Pods-WeightEntryTargets-WeightEntry.debug.xcconfig"; sourceTree = "<group>"; };
+		52C0B45DE883A542C9A227D2 /* Pods_WeightEntryTargets_WeightEntryWatch.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_WeightEntryTargets_WeightEntryWatch.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		694D9143752906B29CD64DEC /* Pods-WeightEntryTargets-WeightEntryWatch Extension.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-WeightEntryTargets-WeightEntryWatch Extension.debug.xcconfig"; path = "Pods/Target Support Files/Pods-WeightEntryTargets-WeightEntryWatch Extension/Pods-WeightEntryTargets-WeightEntryWatch Extension.debug.xcconfig"; sourceTree = "<group>"; };
+		8ECB60C06B60D8DEB6E31F32 /* Pods_WeightEntryTargets_WeightEntryWatch_Extension.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_WeightEntryTargets_WeightEntryWatch_Extension.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		C414462920A47A64008D1678 /* WeightEntry.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = WeightEntry.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		C414462C20A47A64008D1678 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		C414462E20A47A64008D1678 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		C414463120A47A64008D1678 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		C414463320A47A65008D1678 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		C414463620A47A65008D1678 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		C414463820A47A65008D1678 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		C414464020A47B0E008D1678 /* WeightEntryWatch.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = WeightEntryWatch.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		C414464320A47B0E008D1678 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Interface.storyboard; sourceTree = "<group>"; };
+		C414464520A47B0F008D1678 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		C414464720A47B0F008D1678 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		C414464C20A47B0F008D1678 /* WeightEntryWatch Extension.appex */ = {isa = PBXFileReference; explicitFileType = "wrapper.app-extension"; includeInIndex = 0; path = "WeightEntryWatch Extension.appex"; sourceTree = BUILT_PRODUCTS_DIR; };
+		C414465320A47B0F008D1678 /* ExtensionDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ExtensionDelegate.swift; sourceTree = "<group>"; };
+		C414465520A47B0F008D1678 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		C414465720A47B0F008D1678 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		C414466320A48045008D1678 /* WeightEntryInterfaceController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WeightEntryInterfaceController.swift; sourceTree = "<group>"; };
+		C414466520A48097008D1678 /* WeightModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WeightModel.swift; sourceTree = "<group>"; };
+		C414466820A48320008D1678 /* DataStorage.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DataStorage.swift; sourceTree = "<group>"; };
+		D8542B8E020F152F51761459 /* Pods-WeightEntryTargets-WeightEntryWatch Extension.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-WeightEntryTargets-WeightEntryWatch Extension.release.xcconfig"; path = "Pods/Target Support Files/Pods-WeightEntryTargets-WeightEntryWatch Extension/Pods-WeightEntryTargets-WeightEntryWatch Extension.release.xcconfig"; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		C414462620A47A64008D1678 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				BD2CF27F6D16E443F19F28D4 /* Pods_WeightEntryTargets_WeightEntry.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		C414464920A47B0F008D1678 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				E59C8A1155ABB74D77660AD0 /* Pods_WeightEntryTargets_WeightEntryWatch_Extension.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		F63AEA3AD14BD7370E4BED62 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		3575FF257C0594602E464B84 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				51BB81EC1C96D2E44BA6C47F /* Pods-WeightEntryTargets-WeightEntry.debug.xcconfig */,
+				37A459F6C036A3A2E31B8F5F /* Pods-WeightEntryTargets-WeightEntry.release.xcconfig */,
+				694D9143752906B29CD64DEC /* Pods-WeightEntryTargets-WeightEntryWatch Extension.debug.xcconfig */,
+				D8542B8E020F152F51761459 /* Pods-WeightEntryTargets-WeightEntryWatch Extension.release.xcconfig */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
+		56C77D5B2E4953BDFC33608F /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				4961D8032ABF7975D09D689B /* Pods_WeightEntryTargets_WeightEntry.framework */,
+				52C0B45DE883A542C9A227D2 /* Pods_WeightEntryTargets_WeightEntryWatch.framework */,
+				8ECB60C06B60D8DEB6E31F32 /* Pods_WeightEntryTargets_WeightEntryWatch_Extension.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		C414462020A47A64008D1678 = {
+			isa = PBXGroup;
+			children = (
+				C414462B20A47A64008D1678 /* WeightEntry */,
+				C414464120A47B0E008D1678 /* WeightEntryWatch */,
+				C414465020A47B0F008D1678 /* WeightEntryWatch Extension */,
+				C414462A20A47A64008D1678 /* Products */,
+				3575FF257C0594602E464B84 /* Pods */,
+				56C77D5B2E4953BDFC33608F /* Frameworks */,
+			);
+			sourceTree = "<group>";
+		};
+		C414462A20A47A64008D1678 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				C414462920A47A64008D1678 /* WeightEntry.app */,
+				C414464020A47B0E008D1678 /* WeightEntryWatch.app */,
+				C414464C20A47B0F008D1678 /* WeightEntryWatch Extension.appex */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		C414462B20A47A64008D1678 /* WeightEntry */ = {
+			isa = PBXGroup;
+			children = (
+				C414462C20A47A64008D1678 /* AppDelegate.swift */,
+				C414462E20A47A64008D1678 /* ViewController.swift */,
+				C414466520A48097008D1678 /* WeightModel.swift */,
+				C414466820A48320008D1678 /* DataStorage.swift */,
+				C414463020A47A64008D1678 /* Main.storyboard */,
+				C414463320A47A65008D1678 /* Assets.xcassets */,
+				C414463520A47A65008D1678 /* LaunchScreen.storyboard */,
+				C414463820A47A65008D1678 /* Info.plist */,
+			);
+			path = WeightEntry;
+			sourceTree = "<group>";
+		};
+		C414464120A47B0E008D1678 /* WeightEntryWatch */ = {
+			isa = PBXGroup;
+			children = (
+				C414464220A47B0E008D1678 /* Interface.storyboard */,
+				C414464520A47B0F008D1678 /* Assets.xcassets */,
+				C414464720A47B0F008D1678 /* Info.plist */,
+			);
+			path = WeightEntryWatch;
+			sourceTree = "<group>";
+		};
+		C414465020A47B0F008D1678 /* WeightEntryWatch Extension */ = {
+			isa = PBXGroup;
+			children = (
+				C414465320A47B0F008D1678 /* ExtensionDelegate.swift */,
+				C414466320A48045008D1678 /* WeightEntryInterfaceController.swift */,
+				C414465520A47B0F008D1678 /* Assets.xcassets */,
+				C414465720A47B0F008D1678 /* Info.plist */,
+			);
+			path = "WeightEntryWatch Extension";
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		C414462820A47A64008D1678 /* WeightEntry */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = C414463B20A47A65008D1678 /* Build configuration list for PBXNativeTarget "WeightEntry" */;
+			buildPhases = (
+				5037283F3BA1525BEAFC5A68 /* [CP] Check Pods Manifest.lock */,
+				C414462520A47A64008D1678 /* Sources */,
+				C414462620A47A64008D1678 /* Frameworks */,
+				C414462720A47A64008D1678 /* Resources */,
+				C414466220A47B0F008D1678 /* Embed Watch Content */,
+				5D431E5A97F48CA2D132D95C /* [CP] Embed Pods Frameworks */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				C414465920A47B0F008D1678 /* PBXTargetDependency */,
+			);
+			name = WeightEntry;
+			productName = WeightEntry;
+			productReference = C414462920A47A64008D1678 /* WeightEntry.app */;
+			productType = "com.apple.product-type.application";
+		};
+		C414463F20A47B0E008D1678 /* WeightEntryWatch */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = C414465F20A47B0F008D1678 /* Build configuration list for PBXNativeTarget "WeightEntryWatch" */;
+			buildPhases = (
+				C414463E20A47B0E008D1678 /* Resources */,
+				C414465E20A47B0F008D1678 /* Embed App Extensions */,
+				F63AEA3AD14BD7370E4BED62 /* Frameworks */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				C414464F20A47B0F008D1678 /* PBXTargetDependency */,
+			);
+			name = WeightEntryWatch;
+			productName = WeightEntryWatch;
+			productReference = C414464020A47B0E008D1678 /* WeightEntryWatch.app */;
+			productType = "com.apple.product-type.application.watchapp2";
+		};
+		C414464B20A47B0F008D1678 /* WeightEntryWatch Extension */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = C414465B20A47B0F008D1678 /* Build configuration list for PBXNativeTarget "WeightEntryWatch Extension" */;
+			buildPhases = (
+				0CF92CD90323524F23711605 /* [CP] Check Pods Manifest.lock */,
+				C414464820A47B0F008D1678 /* Sources */,
+				C414464920A47B0F008D1678 /* Frameworks */,
+				C414464A20A47B0F008D1678 /* Resources */,
+				DC590BC0F360B5B28E3D751D /* [CP] Embed Pods Frameworks */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = "WeightEntryWatch Extension";
+			productName = "WeightEntryWatch Extension";
+			productReference = C414464C20A47B0F008D1678 /* WeightEntryWatch Extension.appex */;
+			productType = "com.apple.product-type.watchkit2-extension";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		C414462120A47A64008D1678 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 0930;
+				LastUpgradeCheck = 0930;
+				ORGANIZATIONNAME = "Andras Kadar";
+				TargetAttributes = {
+					C414462820A47A64008D1678 = {
+						CreatedOnToolsVersion = 9.3;
+					};
+					C414463F20A47B0E008D1678 = {
+						CreatedOnToolsVersion = 9.3;
+					};
+					C414464B20A47B0F008D1678 = {
+						CreatedOnToolsVersion = 9.3;
+					};
+				};
+			};
+			buildConfigurationList = C414462420A47A64008D1678 /* Build configuration list for PBXProject "WeightEntry" */;
+			compatibilityVersion = "Xcode 9.3";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = C414462020A47A64008D1678;
+			productRefGroup = C414462A20A47A64008D1678 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				C414462820A47A64008D1678 /* WeightEntry */,
+				C414463F20A47B0E008D1678 /* WeightEntryWatch */,
+				C414464B20A47B0F008D1678 /* WeightEntryWatch Extension */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		C414462720A47A64008D1678 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				C414463720A47A65008D1678 /* LaunchScreen.storyboard in Resources */,
+				C414463420A47A65008D1678 /* Assets.xcassets in Resources */,
+				C414463220A47A64008D1678 /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		C414463E20A47B0E008D1678 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				C414464620A47B0F008D1678 /* Assets.xcassets in Resources */,
+				C414464420A47B0E008D1678 /* Interface.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		C414464A20A47B0F008D1678 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				C414465620A47B0F008D1678 /* Assets.xcassets in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		0CF92CD90323524F23711605 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-WeightEntryTargets-WeightEntryWatch Extension-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		5037283F3BA1525BEAFC5A68 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-WeightEntryTargets-WeightEntry-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		5D431E5A97F48CA2D132D95C /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"${SRCROOT}/Pods/Target Support Files/Pods-WeightEntryTargets-WeightEntry/Pods-WeightEntryTargets-WeightEntry-frameworks.sh",
+				"${BUILT_PRODUCTS_DIR}/NSObject+Rx-iOS/NSObject_Rx.framework",
+				"${BUILT_PRODUCTS_DIR}/RxCocoa-iOS/RxCocoa.framework",
+				"${BUILT_PRODUCTS_DIR}/RxOptional-iOS/RxOptional.framework",
+				"${BUILT_PRODUCTS_DIR}/RxSwift-iOS/RxSwift.framework",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputPaths = (
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/NSObject_Rx.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/RxCocoa.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/RxOptional.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/RxSwift.framework",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-WeightEntryTargets-WeightEntry/Pods-WeightEntryTargets-WeightEntry-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		DC590BC0F360B5B28E3D751D /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"${SRCROOT}/Pods/Target Support Files/Pods-WeightEntryTargets-WeightEntryWatch Extension/Pods-WeightEntryTargets-WeightEntryWatch Extension-frameworks.sh",
+				"${BUILT_PRODUCTS_DIR}/NSObject+Rx-watchOS/NSObject_Rx.framework",
+				"${BUILT_PRODUCTS_DIR}/RxCocoa-watchOS/RxCocoa.framework",
+				"${BUILT_PRODUCTS_DIR}/RxOptional-watchOS/RxOptional.framework",
+				"${BUILT_PRODUCTS_DIR}/RxSwift-watchOS/RxSwift.framework",
+				"${BUILT_PRODUCTS_DIR}/WCSessionRx/WCSessionRx.framework",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputPaths = (
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/NSObject_Rx.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/RxCocoa.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/RxOptional.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/RxSwift.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/WCSessionRx.framework",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-WeightEntryTargets-WeightEntryWatch Extension/Pods-WeightEntryTargets-WeightEntryWatch Extension-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		C414462520A47A64008D1678 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				C414462F20A47A64008D1678 /* ViewController.swift in Sources */,
+				C414466620A48097008D1678 /* WeightModel.swift in Sources */,
+				C414462D20A47A64008D1678 /* AppDelegate.swift in Sources */,
+				C414466920A48320008D1678 /* DataStorage.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		C414464820A47B0F008D1678 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				C414466420A48045008D1678 /* WeightEntryInterfaceController.swift in Sources */,
+				C414466720A48097008D1678 /* WeightModel.swift in Sources */,
+				C414465420A47B0F008D1678 /* ExtensionDelegate.swift in Sources */,
+				C414466A20A48320008D1678 /* DataStorage.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		C414464F20A47B0F008D1678 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = C414464B20A47B0F008D1678 /* WeightEntryWatch Extension */;
+			targetProxy = C414464E20A47B0F008D1678 /* PBXContainerItemProxy */;
+		};
+		C414465920A47B0F008D1678 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = C414463F20A47B0E008D1678 /* WeightEntryWatch */;
+			targetProxy = C414465820A47B0F008D1678 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		C414463020A47A64008D1678 /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				C414463120A47A64008D1678 /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		C414463520A47A65008D1678 /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				C414463620A47A65008D1678 /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+		C414464220A47B0E008D1678 /* Interface.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				C414464320A47B0E008D1678 /* Base */,
+			);
+			name = Interface.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		C414463920A47A65008D1678 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 11.3;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		C414463A20A47A65008D1678 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 11.3;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				SDKROOT = iphoneos;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		C414463C20A47A65008D1678 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 51BB81EC1C96D2E44BA6C47F /* Pods-WeightEntryTargets-WeightEntry.debug.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 45WDCQN3U5;
+				INFOPLIST_FILE = WeightEntry/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.andraskadar.WeightEntry;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 4.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		C414463D20A47A65008D1678 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 37A459F6C036A3A2E31B8F5F /* Pods-WeightEntryTargets-WeightEntry.release.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 45WDCQN3U5;
+				INFOPLIST_FILE = WeightEntry/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.andraskadar.WeightEntry;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 4.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+		C414465C20A47B0F008D1678 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 694D9143752906B29CD64DEC /* Pods-WeightEntryTargets-WeightEntryWatch Extension.debug.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_COMPLICATION_NAME = Complication;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 45WDCQN3U5;
+				INFOPLIST_FILE = "WeightEntryWatch Extension/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @executable_path/../../Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.andraskadar.WeightEntry.watchkitapp.watchkitextension;
+				PRODUCT_NAME = "${TARGET_NAME}";
+				SDKROOT = watchos;
+				SKIP_INSTALL = YES;
+				SWIFT_VERSION = 4.0;
+				TARGETED_DEVICE_FAMILY = 4;
+				WATCHOS_DEPLOYMENT_TARGET = 4.3;
+			};
+			name = Debug;
+		};
+		C414465D20A47B0F008D1678 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = D8542B8E020F152F51761459 /* Pods-WeightEntryTargets-WeightEntryWatch Extension.release.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_COMPLICATION_NAME = Complication;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 45WDCQN3U5;
+				INFOPLIST_FILE = "WeightEntryWatch Extension/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @executable_path/../../Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.andraskadar.WeightEntry.watchkitapp.watchkitextension;
+				PRODUCT_NAME = "${TARGET_NAME}";
+				SDKROOT = watchos;
+				SKIP_INSTALL = YES;
+				SWIFT_VERSION = 4.0;
+				TARGETED_DEVICE_FAMILY = 4;
+				WATCHOS_DEPLOYMENT_TARGET = 4.3;
+			};
+			name = Release;
+		};
+		C414466020A47B0F008D1678 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 45WDCQN3U5;
+				IBSC_MODULE = WeightEntryWatch_Extension;
+				INFOPLIST_FILE = WeightEntryWatch/Info.plist;
+				PRODUCT_BUNDLE_IDENTIFIER = com.andraskadar.WeightEntry.watchkitapp;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = watchos;
+				SKIP_INSTALL = YES;
+				SWIFT_VERSION = 4.0;
+				TARGETED_DEVICE_FAMILY = 4;
+				WATCHOS_DEPLOYMENT_TARGET = 4.3;
+			};
+			name = Debug;
+		};
+		C414466120A47B0F008D1678 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 45WDCQN3U5;
+				IBSC_MODULE = WeightEntryWatch_Extension;
+				INFOPLIST_FILE = WeightEntryWatch/Info.plist;
+				PRODUCT_BUNDLE_IDENTIFIER = com.andraskadar.WeightEntry.watchkitapp;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = watchos;
+				SKIP_INSTALL = YES;
+				SWIFT_VERSION = 4.0;
+				TARGETED_DEVICE_FAMILY = 4;
+				WATCHOS_DEPLOYMENT_TARGET = 4.3;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		C414462420A47A64008D1678 /* Build configuration list for PBXProject "WeightEntry" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				C414463920A47A65008D1678 /* Debug */,
+				C414463A20A47A65008D1678 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		C414463B20A47A65008D1678 /* Build configuration list for PBXNativeTarget "WeightEntry" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				C414463C20A47A65008D1678 /* Debug */,
+				C414463D20A47A65008D1678 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		C414465B20A47B0F008D1678 /* Build configuration list for PBXNativeTarget "WeightEntryWatch Extension" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				C414465C20A47B0F008D1678 /* Debug */,
+				C414465D20A47B0F008D1678 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		C414465F20A47B0F008D1678 /* Build configuration list for PBXNativeTarget "WeightEntryWatch" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				C414466020A47B0F008D1678 /* Debug */,
+				C414466120A47B0F008D1678 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = C414462120A47A64008D1678 /* Project object */;
+}

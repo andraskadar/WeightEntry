@@ -1,0 +1,65 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder.WatchKit.Storyboard" version="3.0" toolsVersion="14109" targetRuntime="watchKit" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES" initialViewController="0Kt-sV-IWC">
+    <device id="watch42" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="watchOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14088"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBWatchKitPlugin" version="14031"/>
+    </dependencies>
+    <scenes>
+        <!--WeightEntry-->
+        <scene sceneID="Xc1-5H-lb3">
+            <objects>
+                <controller identifier="WeightEntry" id="0Kt-sV-IWC" customClass="WeightEntryInterfaceController" customModule="WeightEntryWatch_Extension">
+                    <items>
+                        <group width="1" alignment="left" layout="vertical" id="gSL-uN-g7a">
+                            <items>
+                                <group width="1" alignment="left" layout="vertical" id="7G5-Mn-Xh7">
+                                    <items>
+                                        <label alignment="left" text="Last Input" id="aPT-8D-jOH">
+                                            <fontDescription key="font" type="system" pointSize="12"/>
+                                        </label>
+                                        <group width="1" alignment="left" verticalAlignment="bottom" id="Edi-nk-7a3">
+                                            <items>
+                                                <label alignment="left" text="Weight" id="Y8f-Uk-4xC"/>
+                                                <label alignment="left" text="Date" id="BOT-ID-OtU">
+                                                    <fontDescription key="font" type="system" pointSize="12"/>
+                                                </label>
+                                            </items>
+                                        </group>
+                                    </items>
+                                </group>
+                                <group width="1" alignment="left" layout="vertical" id="gc1-iz-itR">
+                                    <items>
+                                        <label alignment="left" text="CURRENT" textAlignment="center" id="E8n-lB-ARn">
+                                            <color key="textColor" red="0.94901960780000005" green="0.32156862749999998" blue="0.37254901959999998" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                            <fontDescription key="font" type="system" pointSize="29"/>
+                                        </label>
+                                        <label alignment="left" text="Date" textAlignment="center" id="Qqc-mY-gqx">
+                                            <fontDescription key="font" type="system" pointSize="18"/>
+                                        </label>
+                                        <button width="1" alignment="left" title="Add" id="qUp-OR-Bgn">
+                                            <color key="titleColor" red="0.30588235289999999" green="0.80784313730000001" blue="0.48627450979999998" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                            <connections>
+                                                <action selector="didTapAddWeightButton" destination="0Kt-sV-IWC" id="Y6Y-eC-J0w"/>
+                                            </connections>
+                                        </button>
+                                    </items>
+                                    <edgeInsets key="margins" left="5" right="5" top="0.0" bottom="0.0"/>
+                                </group>
+                            </items>
+                        </group>
+                    </items>
+                    <connections>
+                        <outlet property="addWeightButton" destination="qUp-OR-Bgn" id="mxQ-Ge-NuU"/>
+                        <outlet property="weightEntryLabel" destination="E8n-lB-ARn" id="nUn-M2-bJK"/>
+                        <outlet property="weightEntryTimeLabel" destination="Qqc-mY-gqx" id="Vj9-eV-nfN"/>
+                    </connections>
+                </controller>
+            </objects>
+            <point key="canvasLocation" x="76" y="161"/>
+        </scene>
+    </scenes>
+</document>

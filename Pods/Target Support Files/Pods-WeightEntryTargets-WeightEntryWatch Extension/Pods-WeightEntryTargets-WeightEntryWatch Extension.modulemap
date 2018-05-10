@@ -1,0 +1,6 @@
+framework module Pods_WeightEntryTargets_WeightEntryWatch_Extension {
+  umbrella header "Pods-WeightEntryTargets-WeightEntryWatch Extension-umbrella.h"
+
+  export *
+  module * { export * }
+}
