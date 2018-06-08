@@ -8,6 +8,7 @@ abstract_target 'WeightEntryTargets' do
   pod 'RxSwift'
   pod 'RxOptional'
   pod 'NSObject+Rx'
+  pod 'WCSessionRx', :git => 'https://github.com/kadarandras/wcsession_rx.git'
 
   # Pods for WeightEntry
   target 'WeightEntry' do
@@ -15,7 +16,6 @@ abstract_target 'WeightEntryTargets' do
 
   # Pods for WeightEntryWatch
   target 'WeightEntryWatch Extension' do
-      pod 'WCSessionRx'
   end
 
 end

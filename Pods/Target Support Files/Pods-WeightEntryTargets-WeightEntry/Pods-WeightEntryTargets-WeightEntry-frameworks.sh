@@ -147,12 +147,14 @@ if [[ "$CONFIGURATION" == "Debug" ]]; then
   install_framework "${BUILT_PRODUCTS_DIR}/RxCocoa-iOS/RxCocoa.framework"
   install_framework "${BUILT_PRODUCTS_DIR}/RxOptional-iOS/RxOptional.framework"
   install_framework "${BUILT_PRODUCTS_DIR}/RxSwift-iOS/RxSwift.framework"
+  install_framework "${BUILT_PRODUCTS_DIR}/WCSessionRx-iOS/WCSessionRx.framework"
 fi
 if [[ "$CONFIGURATION" == "Release" ]]; then
   install_framework "${BUILT_PRODUCTS_DIR}/NSObject+Rx-iOS/NSObject_Rx.framework"
   install_framework "${BUILT_PRODUCTS_DIR}/RxCocoa-iOS/RxCocoa.framework"
   install_framework "${BUILT_PRODUCTS_DIR}/RxOptional-iOS/RxOptional.framework"
   install_framework "${BUILT_PRODUCTS_DIR}/RxSwift-iOS/RxSwift.framework"
+  install_framework "${BUILT_PRODUCTS_DIR}/WCSessionRx-iOS/WCSessionRx.framework"
 fi
 if [ "${COCOAPODS_PARALLEL_CODE_SIGN}" == "true" ]; then
   wait

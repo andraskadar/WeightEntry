@@ -8,15 +8,19 @@
 
 import UIKit
 import RxSwift
+import RxOptional
 import RxCocoa
 import NSObject_Rx
 import WatchConnectivity
+import WCSessionRx
 
 class ViewController: UIViewController {
 
     @IBOutlet fileprivate weak var tableView: UITableView!
     
     private let weightsRelay = BehaviorRelay<[WeightModel]>(value: DataStorage.storedWeights())
+    
+    private let watchConnectivity: WatchConnectivityServiceType = WatchConnectivityService()
     
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -28,43 +32,18 @@ class ViewController: UIViewController {
             }
             .disposed(by: rx.disposeBag)
         
-        WCSession.default.delegate = self
-        WCSession.default.activate()
-    }
-
-}
-
-extension ViewController: WCSessionDelegate {
-    func session(_ session: WCSession, activationDidCompleteWith activationState: WCSessionActivationState, error: Error?) {
-        print("Session Did Complete: \(activationState) - error: \(error)")
-        if activationState == .activated {
-            print(session.receivedApplicationContext)
-        }
-    }
-    
-    func sessionDidBecomeInactive(_ session: WCSession) {
-        print("Session did become inactive")
-    }
-    
-    func sessionDidDeactivate(_ session: WCSession) {
-        print("Session did deactivate")
-    }
-    
-    func session(_ session: WCSession, didReceiveMessage message: [String : Any], replyHandler: @escaping ([String : Any]) -> Void) {
-        guard let newWeightData = message["newWeight"] as? Data,
-            let newWeight = try? JSONDecoder().decode(WeightModel.self, from: newWeightData)
-            else { return }
+        let session = WCSession.default
+        session.activate()
         
-        print("New weight received: \(newWeight)")
-        replyHandler(["success": true])
-        DataStorage.store(weight: newWeight)
-        weightsRelay.accept(DataStorage.storedWeights())
+        watchConnectivity.startSession()
+        watchConnectivity.hasActiveConnection
+            .filter { $0 }
+            .flatMap { [unowned self] _ in self.watchConnectivity.didReceiveObject(type: WeightModel.self) }
+            .map(DataStorage.store)
+            .map { _ in DataStorage.storedWeights() }
+            .bind(to: weightsRelay)
+            .disposed(by: rx.disposeBag)
     }
-    
-    func session(_ session: WCSession, didReceiveApplicationContext applicationContext: [String : Any]) {
-        print("Received context: \(applicationContext)")
-    }
-    
-    
+
 }
 

@@ -15,7 +15,7 @@ DEPENDENCIES:
   - "NSObject+Rx"
   - RxOptional
   - RxSwift
-  - WCSessionRx
+  - WCSessionRx (from `https://github.com/kadarandras/wcsession_rx.git`)
 
 SPEC REPOS:
   https://github.com/CocoaPods/Specs.git:
@@ -23,15 +23,23 @@ SPEC REPOS:
     - RxCocoa
     - RxOptional
     - RxSwift
-    - WCSessionRx
+
+EXTERNAL SOURCES:
+  WCSessionRx:
+    :git: https://github.com/kadarandras/wcsession_rx.git
+
+CHECKOUT OPTIONS:
+  WCSessionRx:
+    :commit: eeae77f5b1ae9c6e0588c810347da1bc5c1b7fb1
+    :git: https://github.com/kadarandras/wcsession_rx.git
 
 SPEC CHECKSUMS:
   "NSObject+Rx": 9a5eeff5e08156f849fa973514456f28eef08742
   RxCocoa: d88ba0f1f6abf040011a9eb4b539324fc426843a
   RxOptional: fabc37fc8e3cf4c336ebaeb5c92b576c64b2e6c5
   RxSwift: e49536837d9901277638493ea537394d4b55f570
-  WCSessionRx: 4bfd2f3defca35f837769de9848efb8426728d89
+  WCSessionRx: cd6a9bdd224f6cef678680daf0895c89142e74aa
 
-PODFILE CHECKSUM: a69cf5fa6d0bd182e9c9de25cc7ee23009a40965
+PODFILE CHECKSUM: 005701153f5f860226b45ca7767c4d815baebf08
 
 COCOAPODS: 1.5.0

@@ -147,14 +147,14 @@ if [[ "$CONFIGURATION" == "Debug" ]]; then
   install_framework "${BUILT_PRODUCTS_DIR}/RxCocoa-watchOS/RxCocoa.framework"
   install_framework "${BUILT_PRODUCTS_DIR}/RxOptional-watchOS/RxOptional.framework"
   install_framework "${BUILT_PRODUCTS_DIR}/RxSwift-watchOS/RxSwift.framework"
-  install_framework "${BUILT_PRODUCTS_DIR}/WCSessionRx/WCSessionRx.framework"
+  install_framework "${BUILT_PRODUCTS_DIR}/WCSessionRx-watchOS/WCSessionRx.framework"
 fi
 if [[ "$CONFIGURATION" == "Release" ]]; then
   install_framework "${BUILT_PRODUCTS_DIR}/NSObject+Rx-watchOS/NSObject_Rx.framework"
   install_framework "${BUILT_PRODUCTS_DIR}/RxCocoa-watchOS/RxCocoa.framework"
   install_framework "${BUILT_PRODUCTS_DIR}/RxOptional-watchOS/RxOptional.framework"
   install_framework "${BUILT_PRODUCTS_DIR}/RxSwift-watchOS/RxSwift.framework"
-  install_framework "${BUILT_PRODUCTS_DIR}/WCSessionRx/WCSessionRx.framework"
+  install_framework "${BUILT_PRODUCTS_DIR}/WCSessionRx-watchOS/WCSessionRx.framework"
 fi
 if [ "${COCOAPODS_PARALLEL_CODE_SIGN}" == "true" ]; then
   wait

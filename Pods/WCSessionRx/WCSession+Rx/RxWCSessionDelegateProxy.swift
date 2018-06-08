@@ -14,6 +14,7 @@ extension WCSession: HasDelegate {
     public typealias Delegate = WCSessionDelegate
 }
 
+@available(iOS 9.3, *)
 @available(watchOSApplicationExtension 2.2, *)
 public class RxWCSessionDelegateProxy: DelegateProxy<WCSession, WCSessionDelegate>, WCSessionDelegate, DelegateProxyType {
     
@@ -48,6 +49,16 @@ public class RxWCSessionDelegateProxy: DelegateProxy<WCSession, WCSessionDelegat
         
         _forwardToDelegate?.session(session, activationDidCompleteWith: activationState, error: error)
     }
+    
+    #if os(iOS)
+    public func sessionDidBecomeInactive(_ session: WCSession) {
+        
+    }
+    
+    public func sessionDidDeactivate(_ session: WCSession) {
+        
+    }
+    #endif
     
     deinit {
         _activationStateSubject?.on(.completed)

@@ -1,6 +1,0 @@
-framework module WCSessionRx {
-  umbrella header "WCSessionRx-umbrella.h"
-
-  export *
-  module * { export * }
-}

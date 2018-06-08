@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		018AB19B20A57E81004A03B0 /* WatchConnectivityService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 018AB19A20A57E81004A03B0 /* WatchConnectivityService.swift */; };
 		BD2CF27F6D16E443F19F28D4 /* Pods_WeightEntryTargets_WeightEntry.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 4961D8032ABF7975D09D689B /* Pods_WeightEntryTargets_WeightEntry.framework */; };
 		C414462D20A47A64008D1678 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = C414462C20A47A64008D1678 /* AppDelegate.swift */; };
 		C414462F20A47A64008D1678 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C414462E20A47A64008D1678 /* ViewController.swift */; };
@@ -70,6 +71,7 @@
 /* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
+		018AB19A20A57E81004A03B0 /* WatchConnectivityService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WatchConnectivityService.swift; sourceTree = "<group>"; };
 		37A459F6C036A3A2E31B8F5F /* Pods-WeightEntryTargets-WeightEntry.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-WeightEntryTargets-WeightEntry.release.xcconfig"; path = "Pods/Target Support Files/Pods-WeightEntryTargets-WeightEntry/Pods-WeightEntryTargets-WeightEntry.release.xcconfig"; sourceTree = "<group>"; };
 		4961D8032ABF7975D09D689B /* Pods_WeightEntryTargets_WeightEntry.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_WeightEntryTargets_WeightEntry.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		51BB81EC1C96D2E44BA6C47F /* Pods-WeightEntryTargets-WeightEntry.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-WeightEntryTargets-WeightEntry.debug.xcconfig"; path = "Pods/Target Support Files/Pods-WeightEntryTargets-WeightEntry/Pods-WeightEntryTargets-WeightEntry.debug.xcconfig"; sourceTree = "<group>"; };
@@ -174,6 +176,7 @@
 				C414462E20A47A64008D1678 /* ViewController.swift */,
 				C414466520A48097008D1678 /* WeightModel.swift */,
 				C414466820A48320008D1678 /* DataStorage.swift */,
+				018AB19A20A57E81004A03B0 /* WatchConnectivityService.swift */,
 				C414463020A47A64008D1678 /* Main.storyboard */,
 				C414463320A47A65008D1678 /* Assets.xcassets */,
 				C414463520A47A65008D1678 /* LaunchScreen.storyboard */,
@@ -383,6 +386,7 @@
 				"${BUILT_PRODUCTS_DIR}/RxCocoa-iOS/RxCocoa.framework",
 				"${BUILT_PRODUCTS_DIR}/RxOptional-iOS/RxOptional.framework",
 				"${BUILT_PRODUCTS_DIR}/RxSwift-iOS/RxSwift.framework",
+				"${BUILT_PRODUCTS_DIR}/WCSessionRx-iOS/WCSessionRx.framework",
 			);
 			name = "[CP] Embed Pods Frameworks";
 			outputPaths = (
@@ -390,6 +394,7 @@
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/RxCocoa.framework",
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/RxOptional.framework",
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/RxSwift.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/WCSessionRx.framework",
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
@@ -407,7 +412,7 @@
 				"${BUILT_PRODUCTS_DIR}/RxCocoa-watchOS/RxCocoa.framework",
 				"${BUILT_PRODUCTS_DIR}/RxOptional-watchOS/RxOptional.framework",
 				"${BUILT_PRODUCTS_DIR}/RxSwift-watchOS/RxSwift.framework",
-				"${BUILT_PRODUCTS_DIR}/WCSessionRx/WCSessionRx.framework",
+				"${BUILT_PRODUCTS_DIR}/WCSessionRx-watchOS/WCSessionRx.framework",
 			);
 			name = "[CP] Embed Pods Frameworks";
 			outputPaths = (
@@ -429,6 +434,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				018AB19B20A57E81004A03B0 /* WatchConnectivityService.swift in Sources */,
 				C414462F20A47A64008D1678 /* ViewController.swift in Sources */,
 				C414466620A48097008D1678 /* WeightModel.swift in Sources */,
 				C414462D20A47A64008D1678 /* AppDelegate.swift in Sources */,
